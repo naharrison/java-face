@@ -1,0 +1,10 @@
+---
+language: java
+
+before_install:
+  - echo this_is_the_before_install_option
+
+script: echo this_is_the_script_option
+
+jdk:
+- oraclejdk8
