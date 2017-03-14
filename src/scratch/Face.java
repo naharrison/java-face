@@ -27,7 +27,7 @@ public class Face extends Application {
 		eyeR.setX(400);
 		eyeR.setY(120);
 		//eyeR.setColor(Color.BLUE);
-		ABC123eyeR.setColor(Color.BROWN);
+		eyeR.setColor(Color.BROWN);
     	for(Shape s : eyeR.getListOfShape()) root.getChildren().add(s);
     	
     	Nose nose = new Nose();
