@@ -1,1 +1,5 @@
 /bin/
+src/parts/Eye.class
+src/parts/Nose.class
+src/parts/Mouth.class
+src/scratch/Face.class
