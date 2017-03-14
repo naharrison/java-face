@@ -8,7 +8,7 @@ before_install:
 script:
   - echo attempting to draw face
   - echo "here it goes..."
-  #- ./drawface.sh
+  - ./drawface.sh
 
 jdk:
 - oraclejdk8
