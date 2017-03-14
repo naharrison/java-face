@@ -2,9 +2,12 @@
 language: java
 
 before_install:
-  - echo this_is_the_before_install_option
+  - echo this is the
+  - before_install option
 
-script: ./drawface.sh
+script:
+  - echo attempting to draw face
+  - ./drawface.sh
 
 jdk:
 - oraclejdk8
