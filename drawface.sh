@@ -30,7 +30,7 @@ echo "MyThing failure"
 exit 1
 fi
 
-javac -cp src/ src/utest/MyThingTest.java
+javac -cp "src/:lib/*" src/utest/MyThingTest.java
 if [ $? != 0 ]
 then
 	echo "MyThingTest failure"
@@ -51,7 +51,14 @@ then
 	exit 1
 fi
 
-#java -Xmx1536m -Xms1024m -cp src/ scratch.Face
+### run HeyWorld.java ###
 java -Xmx1536m -Xms1024m -cp src/ scratch.HeyWorld
-java -Xmx1536m -Xms1024m -cp src/ utest.MyThingTest
+
+### unit tests ###
+java -Xmx1536m -Xms1024m -cp "src/:lib/*" org.junit.runner.JUnitCore utest.MyThingTest
+if [ $? != 0 ]
+then
+	echo "unit test failure"
+	exit 1
+fi
 
