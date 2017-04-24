@@ -23,6 +23,13 @@ then
 	exit 1
 fi
 
+javac src/scratch/MyThing.java
+if [ $? != 0 ]
+then
+echo "MyThing failure"
+exit 1
+fi
+
 javac -cp src/ src/scratch/Face.java
 if [ $? != 0 ]
 then

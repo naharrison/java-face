@@ -1,17 +1,17 @@
 ---
 language: java
 
+jdk:
+  - oraclejdk8
+
 before_install:
   - echo this is the
   - echo before_install option
 
 script:
-  - echo attempting to draw face
   - echo "here it goes..."
   - ./drawface.sh
-
-jdk:
-- oraclejdk8
+  - ant test
 
 notifications:
   email: false
