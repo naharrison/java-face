@@ -9,13 +9,13 @@ public class MyThingTest {
 	@Test
 	public void testConcatenate() {
 		scratch.MyThing myThing = new MyThing();
-		assertEquals("onetwo", myThing.concatenate("one", "two"));
+		assertEquals(myThing.concatenate("one", "two"), "onetwo");
 	}
 
 	@Test
 	public void testConcatenateWithSpace() {
 		scratch.MyThing myThing = new MyThing();
-		assertEquals("one-two", myThing.concatenateWithSpace("one", "two"));
+		assertEquals(myThing.concatenateWithSpace("one", "two"), "one two");
 	}
 
 }
