@@ -15,7 +15,7 @@ public class MyThingTest {
 	@Test
 	public void testConcatenateWithSpace() {
 		scratch.MyThing myThing = new MyThing();
-		assertEquals("one two", myThing.concatenateWithSpace("one", "two"));
+		assertEquals("one-two", myThing.concatenateWithSpace("one", "two"));
 	}
 
 }
