@@ -38,4 +38,4 @@ then
 fi
 
 #java -Xmx1536m -Xms1024m -cp src/ scratch.Face
-java -Xmx1536m -Xms1024m -cp src/ scratch.Test1
+java -Xmx1536m -Xms1024m -cp src/ scratch.HeyWorld
