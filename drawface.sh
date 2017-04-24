@@ -30,6 +30,13 @@ echo "MyThing failure"
 exit 1
 fi
 
+javac -cp src/ src/utest/MyThingTest.java
+if [ $? != 0 ]
+then
+	echo "MyThingTest failure"
+	exit 1
+fi
+
 javac -cp src/ src/scratch/Face.java
 if [ $? != 0 ]
 then
@@ -46,3 +53,5 @@ fi
 
 #java -Xmx1536m -Xms1024m -cp src/ scratch.Face
 java -Xmx1536m -Xms1024m -cp src/ scratch.HeyWorld
+java -Xmx1536m -Xms1024m -cp src/ utest.MyThingTest
+
