@@ -6,3 +6,5 @@ src/scratch/Face.class
 src/scratch/Test1.class
 .classpath
 .project
+.settings
+target
